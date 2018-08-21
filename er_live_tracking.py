@@ -11,7 +11,7 @@ from pathlib import Path
 
 # parameters
 url = 'https://s3.amazonaws.com/files.celtra-test.com/bdsEventsSample.gz'
-filepath = 'both.csv'
+filepath = 'data.csv'
 er_interval = 20  # interval for calculating ER in minutes
 
 # download file from web if not in folder
