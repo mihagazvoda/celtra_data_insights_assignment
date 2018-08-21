@@ -235,7 +235,7 @@ def download_file(url, filepath):
     Returns:
         df_both: DataFrame
     """
-    print('Downloading and processing a file - this will take a minute or two.')
+    print('Downloading and processing the file...')
     df = import_file(url)
     df = preprocess_df(df)
 
