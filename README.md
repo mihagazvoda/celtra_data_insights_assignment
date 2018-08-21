@@ -1,4 +1,3 @@
-~~~markdown
 # Celtra Data Insights assignment
 
 My solution for the Celtra Data Insights assignment. The solution is implemented in Python. Files to run:  
@@ -17,13 +16,16 @@ Having [Anaconda](https://www.continuum.io/downloads) or  installed simply creat
 
 ```
 # install working environment with conda
-conda env create -n celtra_task -f environment.yml
+conda env create --file celtra_env.txt
 
 # environment should be activated now
-# if not type: source activate celtra_task
+# if not type: source activate celtra_env
 
 # start juypter notebook if you want to run the celtra_task-notebook
 jupyter notebook
+
+# in case of a kernel problem run inside your celtra_env environment:
+python -m ipykernel install --user --name celtra_env
 
 # run ER live tracking dashboard
 python er_live_tracking.py
@@ -37,10 +39,3 @@ Alternatively you can also create a python virtual enviroment and
 pip install -r requirements.txt
 ```
 
-
-
-
-
-
-
-~~~
