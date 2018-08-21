@@ -12,14 +12,14 @@ git clone https://github.com/mihagazvoda/celtra_data_insights_assignment.git
 cd celtra_data_insights_assignment
 ```
 
-Having [Anaconda](https://www.continuum.io/downloads) or  installed simply create your ENV with 
+Having [Anaconda](https://www.continuum.io/downloads) installed simply create your ENV with (tested)
 
 ```
 # install working environment with conda
-conda env create --file celtra_env.txt
+conda env create -f environment.yml
 
-# environment should be activated now
-# if not type: source activate celtra_env
+# activate environment
+source activate celtra_env
 
 # start juypter notebook if you want to run the celtra_task-notebook
 jupyter notebook
@@ -33,8 +33,8 @@ python er_live_tracking.py
 # http://127.0.0.1:8050/
 ```
 
-  
-Alternatively you can also create a python virtual enviroment and 
+
+Alternatively you can also create a python virtual enviroment (not tested):
 ```
 pip install -r requirements.txt
 ```
