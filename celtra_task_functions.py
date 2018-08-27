@@ -108,7 +108,7 @@ def engagement_df(df):
 
 def twoSampZ(X1, sd1, n1, X2, sd2, n2):
     """
-    Calculate two sided z-test for means, standard deviationsand sizes of two samples.
+    Calculate two sided z-test for means, standard deviations and sizes of two samples.
 
     Args:
         X1, X2: means of samples
@@ -262,7 +262,7 @@ def read_file(filepath, sdk=None, object=None):
     Returns:
         df: filtered DataFrame
     """
-    df = pd.read_csv('../outputs/both.csv')
+    df = pd.read_csv(filepath)
     df['timestamp'] = pd.to_datetime(df['timestamp'])
 
     if (sdk != None) & (object != None):
